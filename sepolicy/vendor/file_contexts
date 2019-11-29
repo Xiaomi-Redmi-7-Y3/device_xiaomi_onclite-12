@@ -3,6 +3,11 @@
 /data/vendor/fpc(/.*)?                              u:object_r:fp_data_file:s0
 /data/gf_data(/.*)?                                 u:object_r:gf_data_file:s0
 
+/sys/class/thermal/thermal_zone0/temp                           u:object_r:sysfs_device_info:s0
+/sys/class/power_supply/battery/temp                            u:object_r:sysfs_device_info:s0
+/sys/kernel/gpu/gpu_clock                                       u:object_r:sysfs_device_info:s0
+/sys/kernel/gpu/gpu_busy                                        u:object_r:sysfs_device_info:s0
+
 # FPC FP
 /sys/devices/platform/soc/soc:fpc1020(/.*)?         u:object_r:sysfs_fpc:s0
 
