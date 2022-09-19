@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022-2023 The LineageOS Project
+# Copyright (C) 2022-2023 The AICP Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,20 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some common ProjectBlaze stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common Project AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-# Blaze Official Stuff
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := Aditya-&-Abhinav
+# AICP Stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USE_PIXEL_CHARGER := true
+WITH_GMS := false
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := blaze_onclite
+PRODUCT_NAME := aicp_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7

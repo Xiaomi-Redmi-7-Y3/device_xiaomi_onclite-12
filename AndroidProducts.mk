@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_onclite.mk
+    $(LOCAL_DIR)/aicp_onclite.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_onclite-user \
-    blaze_onclite-userdebug \
-    blaze_onclite-eng
+    aicp_onclite-user \
+    aicp_onclite-userdebug \
+    aicp_onclite-eng
